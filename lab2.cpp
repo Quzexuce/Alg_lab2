@@ -17,10 +17,10 @@ double ds(double x){
 
 int main(){
     ofstream out;
-    out.open("textfile.txt");
+    out.open("text.txt");
     for (double x = -5; x <= 5; x++) out << "x = " << x <<"\ty =" << ds(x) << endl;
     out.close();
-    ifstream in("textfile.txt");
+    ifstream in("text.txt");
     string line;
     while (getline(in,line)) cout << line << endl;    
     return 0;
